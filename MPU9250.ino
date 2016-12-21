@@ -1,4 +1,4 @@
-// Test eeprom  MPU9250 (SPI)->DuePi
+// Test MPU9250 (SPI)->DuePi
 // MPU9250 Giroscopio/Acelerómetro/Compás interno/9-AXIS (Bus SPI, max. 20Mhz) 
 /* ******************************************************************* 
   Radioelf - December 2016
