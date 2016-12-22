@@ -1,4 +1,4 @@
-// Test barometro MS5611-01 -> DronPi
+// Test barometro MS5611-01 -> DuePi
 // Arduino Due spi 3v3
 /* ******************************************************************* 
   Radioelf - December 2016
