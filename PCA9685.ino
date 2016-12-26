@@ -138,7 +138,7 @@ void Init_PCA9685() {
   write_register(PCA9685_RA_MODE2, B00000100);               // defecto PCA9685_RA_MODE2
   frequency = getFrequency();                                // lee el valor prescale almacenado en PCA9685 y calcula la frecuencia basada en él
   write_register (PCA9685_RA_MODE1, (PCA9685_MODE1_AI_BIT));
-  digitalWrite(PWM_EN_PIN, LOW);                             // pin PWM_EN_PIN a 0 (habilitado)
+  digitalWrite(PWM_EN_PIN, LOW);                             // pin PWM_EN_PIN a 1 (habilitado)
   restart();                                                 // el reinicio se realiza para habilitar el reloj
 }
 // Desactivar el modo de reposo e iniciar las salidas
