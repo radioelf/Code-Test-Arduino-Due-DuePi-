@@ -78,7 +78,7 @@ void setup() {
   pinMode(ENABL_PIN, OUTPUT);
   digitalWrite(ENABL_PIN, HIGH);                             // habilitamos placa DronPi
   pinMode(PWM_EN_PIN, OUTPUT);
-  digitalWrite(PWM_EN_PIN, HIGH);                            // pin PWM_EN_PIN a 0 (deshabilitado)
+  digitalWrite(PWM_EN_PIN, HIGH);                            // pin PWM_EN_PIN a 1 (deshabilitado)
   
   Serial.begin(115200);
   delay(250);
