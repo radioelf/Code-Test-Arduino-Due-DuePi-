@@ -1,5 +1,6 @@
 // Test i2c scanner-> DuePi
 // Arduino Due 3V3 SDA D4 pin 7, SCL D5 pin 8
+// based on code https://github.com/MartyMacGyver/Arduino_I2C_Scanner
 // --------------------------------------
 // i2c_scanner
 //
@@ -27,10 +28,8 @@
 //
 // This sketch tests the standard 7-bit addresses
 // Devices with higher bit address might not be seen properly.
-
-// Mod. radioelf for DuePi December 2016
 /* ******************************************************************* 
-  Radioelf - February December 2016
+  Radioelf - December 2016
  http://radioelf.blogspot.com.es/
  
   Copyright (c) 2016 Radioelf.  All rights reserved.
