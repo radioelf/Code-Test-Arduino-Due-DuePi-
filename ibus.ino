@@ -24,7 +24,7 @@
 
 #define IBUS_MAXCHANNELS 14
 #define FAILSAFELIMIT 1020                          // When all the 6 channels below this value assume failsafe
-#define IBUS_BUFFSIZE 32                            // Max iBus packet size (2 byte header, 14 channels x 2 bytes, 2 byte checksum)
+#define IBUS_BUFFSIZE 32                            // Max iBus packet size (2 byte header (0x20, 0x40), 14 channels x 2 bytes, 2 byte checksum)
 
 #define ENABL_PIN 31                                // PA7  PIN SAM3X 26,  DronPi PIN-> 1,  Max. output current 15mA
 #if defined(ARDUINO_SAM_DUE)
@@ -57,7 +57,7 @@ void loop() {
   uint8_t dato =  Serial3.available();
   if (dato){
     uint8_t rx = Serial3.read();
-    //  for start 0x20  as 0x40 for end packet
+    //  for start 0x20  as 0x40 packet
     if (ibusIndex == 0 && rx != 0x20) {
       return;
     }
