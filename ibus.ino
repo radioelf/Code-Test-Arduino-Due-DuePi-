@@ -9,7 +9,7 @@
  http://radioelf.blogspot.com.es/
  
   Copyright (c) 2016 Radioelf.  All rights reserved.
-  Test  Open Source Arduino Due and Ibus FS-IA10B.
+  Test  Open Source Arduino Due and I-bus FS-IA10B.
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
