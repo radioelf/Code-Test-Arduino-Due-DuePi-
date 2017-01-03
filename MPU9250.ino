@@ -68,8 +68,7 @@ void setup() {
   }
   mpu.read_all();
   mpu.read_all();                                                   // despreciamos primera lectura
-
-while (true){}
+  
 }
 void loop() {  
   ReadMPU9250(0);
@@ -81,6 +80,7 @@ void loop() {
   ReadMPU9250(3);                                                 // obtenemos las lecturas del giroscopio  MPU9250
   delay(500);
 }
+
 boolean  initializeMPU9250() {
   mpu.init(true);
   delay(10);
@@ -97,6 +97,7 @@ boolean  initializeMPU9250() {
     return false;
   }
 }
+
 void ReadMPU9250(byte readTo){
   switch (readTo){
     case 1:
