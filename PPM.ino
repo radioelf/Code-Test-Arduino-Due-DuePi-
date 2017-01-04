@@ -36,7 +36,7 @@ unsigned long Current_Time;
 unsigned long Delta_Time;
 volatile byte Current_Channel = 0;
 volatile int PPM[MAX_PPM_CHANNELS];
-byte x = 0;
+byte x = 8;
 
 void setup() {
   pinMode(ENABL_PIN, OUTPUT);
@@ -45,20 +45,12 @@ void setup() {
   delay(250);
   Serial.println(duepi);
   initializeReceiverPPM();
-  Serial.println("Selecconar el canal a monitorizar 0-7");
+  Serial.println("Seleccionar el canal a monitorizar 0-7");
 }
 
 void loop() {
   if(Serial.available() > 0){ // Si existen datos de entrada en la comunicacion serial 
-    char input =Serial.read(); 
-    if(input =='0') x=0;
-    if(input =='1') x=1;
-    if(input =='2') x=2;
-    if(input =='3') x=3;
-    if(input =='4') x=4;
-    if(input =='5') x=5;
-    if(input =='6') x=6;
-    if(input =='7') x=7;
+    x = (Serial.read()-48); 
   }
   if (getRawChannelValue(x) >1){
     Serial.print("RX Canal: ");
