@@ -38,7 +38,7 @@ void loop() {
       // 42                                                          62
       // R  A   D  I  O  E  L  F     -  G  N  U  -  D  r   o   n   P  i       
       Serial.println("Leemos EEPRON:");   
-      for (int x = 42; x < 62; x++) {                              // lememos de la posición 42 a la 62
+      for (int x = 42; x < 62; x++) {                              // leememos de la posición 42 a la 62
         trama.concat((char) readEEPROM(x));    
       }
       if (trama != ""){
