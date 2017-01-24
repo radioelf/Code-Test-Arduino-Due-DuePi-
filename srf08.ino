@@ -3,8 +3,8 @@
   Radioelf - December 2017
  http://radioelf.blogspot.com.es/
  
-  Copyright (c) 2016 Radioelf.  All rights reserved.
-  Test  Open Source Arduino Due and PPM.
+  Copyright (c) 2017 Radioelf.  All rights reserved.
+  Test  Open Source Arduino Due and SRF08.
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
