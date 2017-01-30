@@ -45,8 +45,8 @@ Direcciones I2C
 uint8_t SRF_ADDRESS[] {0x70, 0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F};// dirección modulo SRF08
 uint8_t Address =1;                           // 0x71
 
-uint8_t gain = 0x00;                          // de 0->31 = 94->1025, default 0
-uint8_t range = 0x8C;                         // 6mts, scope =(rangex43mm) + 43mm), max 11mts 0xFF, 0->43mm, 255->10965mm, default 255
+uint8_t gain = 0x08;                          // de 0->31 = 94->1025, default 0x1F->31
+uint8_t range = 0x8C;                         // 6mts, scope =(rangex43mm) + 43mm), max 11mts 0xFF, 0->43mm, 255->10965mm, default 0xFF->255
 uint8_t mesure = Cm;                          // centimetros
 int  reading = 0;
 
