@@ -101,7 +101,7 @@ void setup() {
 void loop() {  
   ReadMPU9250(1);                                                     // We get the accelerometer readings MPU9250
   #if !defined (SerialPlotter)
-    delay(33);                                                        // 10ms-> 100Hz
+    delay(33);                                                        // 100ms-> 10Hz
   #endif
   ReadMPU9250(2);                                                     // We get the compass readings MPU9250  
   #if !defined (SerialPlotter)                                                
