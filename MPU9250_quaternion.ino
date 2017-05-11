@@ -56,6 +56,7 @@ float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};                                // vector 
 float ax, ay, az, gx, gy, gz, mx, my, mz;                             // variables to hold latest sensor data values 
 float magbias[3] = {0.0f , 0.0f, 0.0f};
 uint32_t lastUpdate = 0;                                              // used to calculate integration interval
+uint32_t  sumCount = 0;                                               // used to control display output rate
 float pitch, yaw, roll;
 int pitch_ =0, yaw_ =0, roll_ =0, _pitch =0, _yaw =0, _roll =0;
 float deltat = 0.0f, sum = 0.0f;                                      // integration interval for both filter schemes
@@ -250,8 +251,10 @@ void ReadMPU9250(byte readTo){
           _pitch = pitch_;
           _roll = roll_;
         }
+      Serial.print("rate = "); Serial.print((float)sumCount / sum, 2); Serial.println(" Hz");
       #endif
-      sum = 0;  
+      sum = 0; 
+      sumCount = 0;
     break;
     default:
       mpu.read_all();
