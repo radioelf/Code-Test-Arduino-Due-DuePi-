@@ -1,4 +1,4 @@
-// Test ADC1115 -> DuePi
+// Test ADS1115 -> DuePi
 // Arduino Due 3V3 SDA D4 pin 7, SCL D5 pin 8
 /*            R1                R2
  *   Int    |-----|           |-----|
