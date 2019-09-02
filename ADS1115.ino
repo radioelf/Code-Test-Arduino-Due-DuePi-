@@ -43,7 +43,7 @@ Adafruit_ADS1115 ads1115;
 
 #define ENABL_PIN 31                                                  // PA7  PIN SAM3X 26,  DronPi PIN-> 1,  Max. output current 15mA
 
-float multiplo = 1.85069F;                                            // ADS1115  +/- 4.096V ganancia 1x (16-bit) 
+float multiplo = 1.125F;                                              // ADS1115  +/- 4.096V ganancia 1x (16-bit) 
 byte canal =0;
 
 void setup() {
